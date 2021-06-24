@@ -68,5 +68,13 @@ async def winrate(ctx,arg):
     embed.set_thumbnail(url = thumb)
     await ctx.send(embed = embed)
 
+@bot.command()
+async def umma(ctx):
+    embed = discord.Embed(title='umma', color=discord.Colour.red())
+    await ctx.send(embed =  embed)
+
+
+
+
 
 bot.run(TOKEN)

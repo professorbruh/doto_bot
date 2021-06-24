@@ -8,8 +8,7 @@ def hero_call(name):
     page_html = urlopen(uClient).read()
     parsed_page = soup(page_html,"html.parser")
     win_rate = parsed_page.find("span",class_ = 'lost')
-    print(type(win_rate.text))
-    if win_rate.text is None:
+    if str(type(win_rate))=="<class 'NoneType'>":
         win_rate = parsed_page.find('span',class_='won')
 
     return win_rate.text
