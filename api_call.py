@@ -47,14 +47,20 @@ async def test(ctx, arg):
 
 
 @bot.command()
-async def sexytime(ctx):
+async def sunny(ctx):
     responses = [
         'Sunny best kundi in kerala',
-        'Surya cherumani'
+        'Surya cherumani',
+        'Ghost is the individual bullet of the phantom',
+        'u go be sick properly',
+        'ithokke vaanam adich kalayanda aan....avante achante thetti erangiyathayirikkum',
 
     ]
     embed = discord.Embed(title='Quote of the day', description=random.choice(responses), color=discord.Colour.red())
+    embed.set_thumbnail(url = 'https://i.ibb.co/wrnx7Mc/72783fe2-a14c-4212-9110-adbd5923d367.jpg')
     await ctx.send(embed=embed)
+
+
 
 @bot.command()
 async def winrate(ctx,arg):
