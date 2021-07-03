@@ -77,9 +77,8 @@ async def winrate(ctx,arg):
 @bot.command()
 async def umma(ctx):
     embed = discord.Embed(title='umma', color=discord.Colour.red())
-    await ctx.send(embed =  embed)
-
-
+    embed.set_author(name=ctx.message.author.display_name, icon_url=ctx.message.author.avatar_url)
+    await ctx.send(embed = embed)
 
 
 
